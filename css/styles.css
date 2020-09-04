@@ -1,19 +1,24 @@
 #Choose {
     font-weight: bolder;
-    /* color: white; */
     margin: auto;
-    width: 60%;
-    border: 5px solid black;
-    padding: 100px;
+    margin-top: 40px;
+    border: 5px solid red;
+    padding: 40px;
     background-color: red;
     opacity: 0.9;
 }
 
 body {
     background-image: url(../newpizza.png);
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    
+}
+h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    color: red;
 }
