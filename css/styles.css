@@ -23,7 +23,13 @@ h1 {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 40px;
     color: red;
+    font-weight: bolder;
 }
 #choose h4 {
     color: white;
+}
+
+#show-pizza {
+    font-size: 40px;
+    display: none;
 }

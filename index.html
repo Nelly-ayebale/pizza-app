@@ -21,15 +21,28 @@
                 <h1>WELCOME TO HOUSE OF CRUST</h1>
             </div>
             <form id="Choose">
+                <div class="col-md-12">
+                    <div class="form-group">
+
+                        <label for="type">CHOOSE TYPE</label>
+                        <select class="form-control" id="type" required>
+                            <option value=""></option>
+                            <option value="bbq">BBQ</option>
+                            <option value="chicken">CHICKEN</option>
+                            <option value="vegetarian">VEGETARIAN</option>
+                        </select>
+                    </div>
+                </div>
 
                 <div class="col-md-12">
                     <div class="form-group">
 
                         <label for="size">CHOOSE SIZE</label>
-                        <select>
-                            <option value="14">LARGE ($14)</option>
-                            <option value="11">MEDIUM($11)</option>
-                            <option value="4">SMALL ($4)</option>
+                        <select class="form-control" id="size" required>
+                            <option value=""></option>
+                            <option value="large">LARGE</option>
+                            <option value="medium">MEDIUM</option>
+                            <option value="small">SMALL</option>
                         </select>
                     </div>
                 </div>
@@ -37,66 +50,57 @@
                     <div class="form-group">
                         <label for="crust">CHOOSE CRUST</label>
 
-                        <select>
-                            <option value="11.99">CRISPY ($11.99)</option>
-                            <option value="16.99">STUFFED ($16.99)</option>
-                            <option value="9.99">GLUTEN FREE ($9.99)</option>
+                        <select class="form-control" id="crust" required>
+                            <option value=""></option>
+                            <option value="crispy">CRISPY</option>
+                            <option value="stuffed">STUFFED</option>
+                            <option value="gluten-free">GLUTEN FREE</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="toppings">CHOOSE TOPPINGS:</label>
-                        <label id="large">FOR LARGE PIZZA</label>
-                        <select>
-                            <option value="5">PEPPERONI ($10)</option>
-                            <option value="6">MUSHROOMS ($8)</option>
-                            <option value="5">ONIONS ($6)</option>
-                            <option value="5">SAUSAGE ($8)</option>
-                            <option value="5">BACON ($8)</option>
-                            <option value="5">EXTRA CHEESE($7)</option>
-                            <option value="4">BLACK OLIVES($4)</option>
-                            <option value="4">GREEN PEPPERS($4)</option>
-                        </select>
+                <div id="for-toppings">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="toppings">CHOOSE TOPPINGS:</label>
+                            <select class="form-control" id="toppings" required>
+                                <option value=""></option>
+                                <option value="pepperoni">PEPPERONI</option>
+                                <option value="mushrooms">MUSHROOMS</option>
+                                <option value="bacon">BACON</option>
+                                <option value="cheese">EXTRA CHEESE</option>
+                                <option value="black olives">BLACK OLIVES</option>
+
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="toppings">CHOOSE TOPPINGS:</label>
-                        <label id="medium">FOR MEDIUM PIZZA</label>
-                        <select>
-                            <option value="5">PEPPERONI ($10)</option>
-                            <option value="7">MUSHROOMS ($7)</option>
-                            <option value="5">ONIONS ($5)</option>
-                            <option value="7">SAUSAGE ($7)</option>
-                            <option value="7">BACON ($7)</option>
-                            <option value="8">EXTRA CHEESE($8)</option>
-                            <option value="4">BLACK OLIVES($4)</option>
-                            <option value="4">GREEN PEPPERS($4)</option>
-                        </select>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">ORDER</button>
                     </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="toppings">CHOOSE TOPPINGS:</label>
-                        <label id="small">FOR SMALL PIZZA</label>
-                        <select>
-                            <option value="7">PEPPERONI ($7)</option>
-                            <option value="6">MUSHROOMS ($6)</option>
-                            <option value="5">ONIONS ($5)</option>
-                            <option value="6">SAUSAGE ($6)</option>
-                            <option value="6">BACON ($6)</option>
-                            <option value="7">EXTRA CHEESE($7)</option>
-                            <option value="4">BLACK OLIVES($4)</option>
-                            <option value="4">GREEN PEPPERS($4)</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">ORDER</button>
-                </div>
             </form>
+
+            <div class="col-md-6">
+                <h2 class="text-center">Pizza:</h2>
+                <ul id="pizza">
+
+                </ul>
+            </div>
         </div>
+        <section class="details">
+            <div class="col-md-6">
+                <div id="show-pizza">
+                    <h2></h2>
+
+                    <p>SIZE: <span id="size"></span></p>
+                    <p>CRUST: <span id="crust"></span></p>
+
+                    <p>TOPPINGS:</p>
+                    <ul id="toppings">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
     </div>
 
 
