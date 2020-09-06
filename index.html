@@ -58,49 +58,56 @@
                         </select>
                     </div>
                 </div>
-                <div id="for-toppings">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="toppings">CHOOSE TOPPINGS:</label>
-                            <select class="form-control" id="toppings" required>
-                                <option value=""></option>
-                                <option value="pepperoni">PEPPERONI</option>
-                                <option value="mushrooms">MUSHROOMS</option>
-                                <option value="bacon">BACON</option>
-                                <option value="cheese">EXTRA CHEESE</option>
-                                <option value="black olives">BLACK OLIVES</option>
 
-                            </select>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="toppings">CHOOSE TOPPINGS:</label>
+                        <select class="form-control" id="toppings" required>
+                            <option value=""></option>
+                            <option value="pepperoni">PEPPERONI</option>
+                            <option value="mushrooms">MUSHROOMS</option>
+                            <option value="bacon">BACON</option>
+                            <option value="cheese">EXTRA CHEESE</option>
+                            <option value="black olives">BLACK OLIVES</option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 pt-3">
+                    <span class="btn btn-primary" id="add">More Pizza</span>
+                    <button type="submit" class="btn btn-primary">ORDER</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <form id="delivery">
+                <form>
+                    <div class="form-group">
+                        <label for="name">NAME</label>
+                        <input type="text" class="form-control" id="name">
+
+                        <div class="form-group">
+                            <label for="location">STREET</label>
+                            <input type="text" class="form-control" id="street">
+                            <small id="share" class="form-text text-muted">We'll never share your location with anyone
+                                else.</small>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">ORDER</button>
+                    <div class="form-group">
+                        <label for="location">PLOT NUMBER</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <small id="share" class="form-text text-muted">We'll never share your location with anyone
+                            else.</small>
                     </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </form>
-
-            <div class="col-md-6">
-                <h2 class="text-center">Pizza:</h2>
-                <ul id="pizza">
-
-                </ul>
-            </div>
         </div>
-        <section class="details">
-            <div class="col-md-6">
-                <div id="show-pizza">
-                    <h2></h2>
-
-                    <p>SIZE: <span id="size"></span></p>
-                    <p>CRUST: <span id="crust"></span></p>
-
-                    <p>TOPPINGS:</p>
-                    <ul id="toppings">
-
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </div>
     </div>
 
 
