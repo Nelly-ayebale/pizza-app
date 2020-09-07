@@ -106,12 +106,33 @@ $(document).ready(function () {
 
 
         $("ul#pizza").append("<li><span class='pizzalist'>" + newPizza.pizzaPrice() + "</span></li>")
+        yourBill = 0
 
         for (let i = 0; i < numberOfPizzas.length; i++) {
             yourBill += numberOfPizzas[i].pizzaPrice();
 
         }
-        alert("UGX " + yourBill);
+        // alert("UGX " + yourBill);
+
+    })
+    $("form#delivery").submit(function (event) {
+        event.preventDefault();
+        var yourName = $(this).find("#name").val();
+        var yourOption = $(this).find("#deliver").val();
+
+        if (yourOption === "delivery") {
+            alert('You may proceed to the Delivery Form');
+            $("form#location").show();
+        } else {
+            alert("UGX " + yourBill);
+        }
+    })
+    $("form#location").submit(function (event) {
+        event.preventDefault();
+        var yourStreet = $(this).find("#street").val();
+        var yourPlotNumber = $(this).find("#plot").val();
+        yourBill += 7000
+        alert("Your bill is " + yourBill + " and it will be delivered to " + yourStreet + " " + yourPlotNumber);
 
     })
 

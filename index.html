@@ -15,12 +15,13 @@
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mt-5 text-center">
                 <h1>WELCOME TO HOUSE OF CRUST</h1>
             </div>
             <form id="Choose">
+                <p>WE VALUE ALL OUR CUSTOMER CHOICES</p>
                 <div class="col-md-12">
                     <div class="form-group">
 
@@ -76,39 +77,77 @@
 
 
                 <div class="col-md-12 pt-3">
-                    <span class="btn btn-primary" id="add">More Pizza</span>
+
                     <button type="submit" class="btn btn-primary">ORDER</button>
 
                 </div>
             </form>
+            <div class="col-md-6 table" id="summary">
+                <h2>Your Orders</h1>
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Topping</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="summary-list"></tbody>
+                    </table>
+
+
+            </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <form id="delivery">
-                <form>
+                <div class="col-md-12">
                     <div class="form-group">
                         <label for="name">NAME</label>
-                        <input type="text" class="form-control" id="name">
-
-                        <div class="form-group">
-                            <label for="location">STREET</label>
-                            <input type="text" class="form-control" id="street">
-                            <small id="share" class="form-text text-muted">We'll never share your location with anyone
-                                else.</small>
-                        </div>
+                        <input type="text" class="form-control" id="name" value="">
                     </div>
+                </div>
+                <div class="col-md-12">
                     <div class="form-group">
-                        <label for="location">PLOT NUMBER</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="name">DELIVERY OPTION</label>
+                        <select id="deliver" class="form-control">
+                            <option value=""></option>
+                            <option value="delivery">DELIVERY</option>
+                            <option value="pickup">PICK-UP</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <form id="location">
+                <form>
+                    <div class="form-group">
+                        <label for="location">STREET</label>
+                        <input type="text" class="form-control" id="street" value="">
                         <small id="share" class="form-text text-muted">We'll never share your location with anyone
                             else.</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                    <div class="form-group">
+                        <label for="location">PLOT NUMBER</label>
+                        <input type="number" class="form-control" id="plot" value="">
+                        <small id="share" class="form-text text-muted">We'll never share your location with anyone
+                            else.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">DELIVER</button>
                 </form>
-            </form>
         </div>
     </div>
+
+
+
 
 
 
