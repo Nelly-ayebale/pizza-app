@@ -113,6 +113,40 @@ $(document).ready(function () {
 
         }
         // alert("UGX " + yourBill);
+        $("#order-list").append(
+            "<tr>" +
+            '<th scope="row">' +
+            newPizza.type +
+            " (" +
+            newPizza.size +
+            ") - " +
+            "UGX " +
+            newPizza.getSizePrice() +
+            "</th>" +
+            "<td>" +
+            newPizza.toppings +
+            " - " +
+            "UGX " +
+            newPizza.getToppingsPrice() +
+            "</td>" +
+            "<td>" +
+            newPizza.crust +
+            " - " +
+            "UGX " +
+            newPizza.getCrustPrice() +
+            "</td>" +
+            "<td>" +
+            "UGX " +
+            newPizza.pizzaPrice() +
+            "</td>" +
+            "</tr>");
+
+        $("#type").val("");
+        $("#size").val("");
+        $("#crust").val("");
+        $("#toppings").val("");
+
+
 
     })
     $("form#delivery").submit(function (event) {
@@ -124,7 +158,7 @@ $(document).ready(function () {
             alert('You may proceed to the Delivery Form');
             $("form#location").show();
         } else {
-            alert("UGX " + yourBill);
+            alert("Your total bill is " + "UGX " + yourBill);
         }
     })
     $("form#location").submit(function (event) {
@@ -135,7 +169,6 @@ $(document).ready(function () {
         alert("Your bill is " + yourBill + " and it will be delivered to " + yourStreet + " " + yourPlotNumber);
 
     })
-
 
 })
 
